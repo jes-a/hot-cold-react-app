@@ -1,0 +1,35 @@
+nav {
+	position: relative;
+	height: 10%;
+	padding: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+.nav-list li {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2em;
+	display: inline;
+}
+
+.nav-list li:first-child {
+	float: left;
+}
+
+.nav-list li:last-child {
+	float: right;
+}

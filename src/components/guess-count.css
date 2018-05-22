@@ -1,0 +1,13 @@
+.count {
+	color: #f39c12;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.guess-count {
+	padding: 0.5em;
+	font-size: 1.8em;
+	background-color: #394264;
+	width: 380px;
+	margin: 0 auto;
+}
