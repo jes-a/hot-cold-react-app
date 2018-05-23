@@ -2,35 +2,27 @@ import React from 'react';
 
 import './feedback.css';
 
-function DefaultMessage() {
-	return (
-		<div>
-			<h2>Make Your Guess!</h2>
-		</div>
-	);	
-}
-
-// function HotMessage() {
-// 	return (
-// 		<div>
-// 			<h2>Hot</h2>
-// 		</div>
-// 	);
-// }
-
-// function ColdMessage() {
-// 	return (
-// 		<div>
-// 			<h2>Cold</h2>
-// 		</div>
-// 	);
-// }
-
 
 export default function Feedback(props) {
 
-	// const key = props.guessCount;
-		return (		
-			<DefaultMessage />);
+  const key = props.guessCount;
 
+  let guessAgain;
+  if (key !== 0) {
+    guessAgain = <span className="visuallyhidden">Guess again!</span>;
+  }
+  return (
+    <h2 
+      key={key}
+      id="feedback"
+      role="status"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      {props.feedback} {guessAgain}
+    </h2>
+  );
 }
+
+
+

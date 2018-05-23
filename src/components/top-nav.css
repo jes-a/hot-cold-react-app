@@ -1,35 +1,28 @@
 nav {
-	position: relative;
-	height: 10%;
-	padding: 1em;
+  position: relative;
+  height: 10%;
+  padding: 1em;
 }
 
-a {
-	text-decoration: none;
-	color: #ffffff;
+nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
-.clearfix::before, .clearfix::after {
-	content: " ";
-	display: table;
+nav ul li:first-child {
+  float: left;
 }
 
-.clearfix::after {
-	clear: both;
+nav ul li {
+  float: right;
 }
 
-.nav-list li {
-	color: #ffffff;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 1.2em;
-	display: inline;
+nav a {
+  color: #fff;
 }
 
-.nav-list li:first-child {
-	float: left;
-}
-
-.nav-list li:last-child {
-	float: right;
+.status-link {
+  z-index: 100;
+  top: 60px;
 }

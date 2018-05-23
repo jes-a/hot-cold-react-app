@@ -1,14 +1,15 @@
 import React from 'react';
 
-import GuessForm from './guess-form';
 import Feedback from './feedback';
+import GuessForm from './guess-form';
 
 
 export default function GuessSection(props) {
+	const { feedback, guessCount } = props;
 	return (
-		<div className="guess-section">
-			<Feedback />
-			<GuessForm />
-		</div>
+		<section className="guess-section" aria-label="Guess section" aria-describedby="feedback">
+			<Feedback feedback={feedback} guessCount={guessCount} />
+			<GuessForm onMakeGuess={guess => props.onMakeGuess(guess)} />
+		</section>
 	);
 }

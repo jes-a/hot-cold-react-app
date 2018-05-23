@@ -1,4 +1,14 @@
-h2 {
+/* Create a highlight keyframe */
+@keyframes feedback-highlight {
+  0% {
+    background: #9b1228;
+  }
+  100% {
+    background: #cc324b;
+  }
+}
+
+#feedback {
 	margin: 0 auto;
 	background-color: #cc324b;
 	padding: 1em 0.4em;
@@ -10,4 +20,8 @@ h2 {
 	border-top-right-radius: 4px;
 	color: #fff;
 	width: 380px;
+}
+
+#feedback:target {
+  animation: feedback-highlight 3s;
 }
