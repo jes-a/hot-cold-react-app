@@ -11,7 +11,7 @@ describe('<GuessCount />', () => {
 	it('Renders the correct number of guesses', () => {
 		const value = 7;
 		const wrapper = shallow(<GuessCount guessCount={value} />);
-		expect(wrapper.text()).toEqual(`You've made ${value} guesses!`);
+		expect(wrapper.text()).toEqual(`Guess #${value}`);
 	});
 
 });
